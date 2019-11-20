@@ -1,11 +1,11 @@
-# webApp
+# WebApp
 create web app and practice
 
 # MyProfilePage
-©•ª‚ÌĞ‰î
+è‡ªåˆ†ã®ç´¹ä»‹
 
 # passwordGenerator
-ƒpƒXƒ[ƒh©“®¶¬ƒAƒvƒŠ
+ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰è‡ªå‹•ç”Ÿæˆã‚¢ãƒ—ãƒª
 
 # typingGame
 
