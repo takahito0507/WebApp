@@ -1,0 +1,37 @@
+.title {
+  color: #00bb85;
+  font-family: sans-serif;
+}
+
+body{
+  background: #efefef;
+  font-family: 'Courier New', sans-serif;
+  text-align: center;
+}
+
+#btn{
+  width: 200px;
+  height: 200px;
+  background: #00bb85;
+  border-radius: 50%;
+  margin: 30px auto;
+  text-align: center;
+  line-height: 200px;
+  color: white;
+  font-weight: bold;;
+  font-size: 42px;
+  cursor: pointer;
+  box-shadow: 0 5px 0 green;
+  /* ボタン押下時に文字が選択されないようにする */
+  user-select: none;
+}
+
+/* ボタンにカーソル宛てた際に薄さを変える */
+#btn:hover {
+  opacity: 0.7;
+}
+
+#btn:active{
+  box-shadow: 0 2px 0 green;
+  margin-top: 35px;
+}
