@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>More Details</title>
+  <link rel="stylesheet" href="css/details.css">
+  <link rel="icon" href="favicon/google.ico">
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="node_modules/moment/moment.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="anonymous"></script>
+</head>
+
+<body onload="howOld()">
+  <header class="backgroundimg">
+      <div class="boxContainer">
+        <div class="image" scope="col">
+          <img src="image/photo/VaticanFlag.jpg" width="240" height="240" class="profileImg">
+        </div>
+        <div class="introduce" scope="col">
+          <div class="about">Name : Takahito</div>
+          <div class="about">Old : <span id="old"></span> years old</div>
+          <div class="about">Job : Engeneer</div>
+          <div class="about">Mail :
+            <a href="mailto:takahito0507@gmail.com?subject=サイト見たものです">
+              takahito0507@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="info">
+          <p>Who is me?</p>
+        </div>
+      </div>
+  </header>
+
+  <dl id="acMenu">
+    <dt class="car">
+      <h2 class="loved_my_cars">My favatite cars</h2>
+      <!-- <div class="loved_my_cars"><input id="tab-1" name="tabs" type="checkbox"><label for="tab-1">My favatite cars</label> -->
+    </dt>
+    <dd>
+      <section class="cars">
+        <section class="car1">
+          <div class="pic">
+            <img src="image/astonmartin.jpg">
+          </div>
+          <div class="comment">
+            <p class="p1">- Astonmartin -</p>
+            <p>Fearless design,exquisite materials and the highest levels of
+              craftsmanship make an Aston Martin an accomplished piece of
+              automotive art worth creating, celebrating and preserving.
+              That’s why,
+              just like an artist signs their work,
+              we put a name to every single engine.</p>
+          </div>
+        </section>
+        <section class="car1">
+          <div class="pic">
+            <img src="image/bentley.jpg" width="240" height="240">
+          </div>
+          <div class="comment">
+            <p class="p1">- Bentley -</p>
+            <p>Fearless design,exquisite materials and the highest levels of
+              craftsmanship make an Aston Martin an accomplished piece of
+              automotive art worth creating, celebrating and preserving.
+              That’s why,
+              just like an artist signs their work,
+              we put a name to every single engine.</p>
+          </div>
+        </section>
+        <section class="car1">
+          <div class="pic">
+            <img src="image/benzCLS.jpg" width="240" height="240">
+          </div>
+          <div class="comment">
+            <p class="p1">- Mercedes Benz -</p>
+            <p>Fearless design,exquisite materials and the highest levels of
+              craftsmanship make an Aston Martin an accomplished piece of
+              automotive art worth creating, celebrating and preserving.
+              That’s why,
+              just like an artist signs their work,
+              we put a name to every single engine.</p>
+          </div>
+        </section>
+        <section class="car1">
+          <div class="pic">
+            <img src="image/jaguar.jpg" width="240" height="240">
+          </div>
+          <div class="comment">
+            <p class="p1">- Jaguar -</p>
+            <p>Fearless design,exquisite materials and the highest levels of
+              craftsmanship make an Aston Martin an accomplished piece of
+              automotive art worth creating, celebrating and preserving.
+              That’s why,
+              just like an artist signs their work,
+              we put a name to every single engine.</p>
+          </div>
+        </section>
+        <section class="car1">
+          <div class="pic">
+            <img src="image/mclaren.jpg" width="240" height="240">
+          </div>
+          <div class="comment">
+            <p class="p1">- Mclaren -</p>
+            <p>Fearless design,exquisite materials and the highest levels of
+              craftsmanship make an Aston Martin an accomplished piece of
+              automotive art worth creating, celebrating and preserving.
+              That’s why,
+              just like an artist signs their work,
+              we put a name to every single engine.</p>
+          </div>
+        </section>
+        <section class="car1">
+          <div class="pic">
+            <img src="image/rolls_royce.jpg" width="240" height="240">
+          </div>
+          <div class="comment">
+            <p class="p1">- Rolls Royce -</p>
+            <p>Fearless design,exquisite materials and the highest levels of
+              craftsmanship make an Aston Martin an accomplished piece of
+              automotive art worth creating, celebrating and preserving.
+              That’s why,
+              just like an artist signs their work,
+              we put a name to every single engine.</p>
+          </div>
+        </section>
+      </section>
+      <h4>Range Rover, BMW, Audi</h4>
+    </dd>
+    <dt class="travel">
+      <h2 class="loved_my_places">My Travel Memory</h2>
+      <!-- <div class="loved_my_cars"><input id="tab-2" name="tabs" type="checkbox"><label for="tab-2">My Travel Memory</label> -->
+    </dt>
+    <dd>アコーディオンメニューが開く。</dd>
+    <dt class="golf">
+      <h2 class="best_score">My Best Score of Golf</h2>
+      <!-- <div class="loved_my_cars"><input id="tab-3" name="tabs" type="checkbox" /> <label for="tab-3">My Best Score of Golf</label> -->
+    </dt>
+    <dd><canvas id="scoreChart"></canvas></dd>
+    <dt class="sports">
+      <h2 class="mysport">My sports of kind</h2>
+      <!-- <div class="loved_my_cars"><input id="tab-4" name="tabs" type="checkbox" /> <label for="tab-4">My sports of kind</label> -->
+    </dt>
+    <dd>アコーディオンメニューが開く。</dd>
+  </dl>
+
+  <p class="pagetop">
+    <a href="#container">
+      <img src="image/pagetop.png" alt="PAGE TOP" />
+    </a>
+  </p>
+
+  <section class="call-to-action">
+    <a href="ContactPage.html" class="btn">Contact</a>
+  </section>
+  <footer>
+    (C) Ito.corporation.com
+  </footer>
+  <script src="js/details.js"></script>
+  <script src="js/pagetop.js"></script>
+</body>
+
+</html>

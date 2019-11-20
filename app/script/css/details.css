@@ -1,0 +1,214 @@
+  header {
+    background: #5f8572;
+    color: #fff;
+    text-align: left;
+    padding-top: 64px;
+  }
+
+  .backgroundimg {
+    background-image: url(../image/photo/Honolulu_Street.jpg);
+    background-position: center;
+    background-attachment: scroll;
+  }
+
+  /* 画像を丸める */
+  .profileImg {
+    width: 200px;
+    border-radius: 60%;
+  }
+
+  /* アコーディオンB */
+  .loved_my_cars {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    color: #fff;
+  }
+
+  .loved_my_cars input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .loved_my_cars label {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 3;
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    cursor: pointer;
+    margin: 0 0 1px 0;
+    background: #5f8572;
+  }
+
+  .loved_my_cars .cars {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+    color: #333333;
+    background: #eaeaea;
+  }
+
+  .loved_my_cars .cars p {
+    margin: 1em;
+    font-size: 14px;
+  }
+
+  .loved_my_cars p {
+    margin-bottom: 0px;
+  }
+
+  /* :checked */
+  .loved_my_cars input:checked~.cars {
+    max-height: 20em;
+  }
+
+  /*チェックのアイコン（↓）*/
+  .loved_my_cars label:after {
+    color: #fff;
+    font-family: "FontAwesome";
+    content: " \f078";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2em;
+    height: 3em;
+  }
+
+  /*チェックのアイコン（↑）*/
+  .cp_actab input:checked~label::after {
+    color: #fff;
+    font-family: "FontAwesome";
+    content: " \f077";
+  }
+
+
+  .boxContainer {
+    overflow: hidden;
+  }
+
+  .image {
+    float: left;
+    /* width: 50%; */
+    width: auto;
+    margin-left: 10px;
+  }
+
+  .image img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+
+  .introduce {
+    width: 50%;
+    margin-left: auto;
+    position: relative;
+    padding: 5px 15px;
+    border: dashed 1px black;
+  }
+
+  .about {
+    border-bottom: dashed;
+    align-content: space-between;
+  }
+
+  body {
+    background-color: #d0dbd6;
+  }
+
+  .pagetop {
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+  }
+
+  .pagetop img {
+    width: 50px;
+  }
+
+  #acMenu dt {
+    color: #fff;
+    background: #5f8572;
+    display: block;
+    width: auto;
+    height: auto;
+    line-height: 10px;
+    text-align: left;
+    border: #666 1px solid;
+    cursor: pointer;
+  }
+
+  #acMenu dd {
+    background: #d0dbd6;
+    width: auto;
+    height: auto;
+    line-height: 100px;
+    text-align: center;
+    border: #666 1px solid;
+    display: none;
+    margin-left: 0;
+  }
+
+  .cars img {
+    width: 50%;
+    height: 70%;
+  }
+
+  .cars section {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+
+  .car1 {
+    height: 250px;
+  }
+
+  .car1 .pic {
+    margin-top: 20px;
+    /* width: 100%;
+    height: 100%; */
+    float: left;
+  }
+
+  .car1 .comment {
+    margin-top: 20px;
+    width: 50%;
+    height: 100%;
+    float: right;
+  }
+
+  /* 偶数(even)番目のセクションを右にシフト */
+  .cars section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .comment p {
+    /* 「上」､「右」､「下」､「左」 */
+    margin: 0px 15px 0px 15px;
+    line-height: normal;
+    text-align: left;
+  }
+
+  .p1 {
+    font-weight: 700;
+  }
+
+  /* 画面が900px以上になったらレイアウト変更 */
+  @media (min-width: 900px) {
+    .car1 .pic {
+      width: 60%;
+    }
+
+    /* 単位が違っても計算ができるcalc */
+    /* 32px分余白にpadding */
+    .car1 .info {
+      width: calc(50% - 32px);
+    }
+  }

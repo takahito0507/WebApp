@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!-- スマホ用に表示領域を合わせる -->
+  <!-- 幅はデバイスの幅と合わせる・最初の倍率は1にする -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Self Profile</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="icon" href="favicon/google.ico">
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="node_modules/moment/moment.js"></script>
+  <script src="js/pagetop.js"></script>
+  <!-- <script src="js/animation.js"></script> -->
+</head>
+
+<body>
+  <header>
+    <!-- PC版レイアウト -->
+    <div class="container">
+      <div class="info">
+        <h1>Who is me?</h1>
+        <p>Let me introduce my hobbies</p>
+        <a href="DetailPage.html" class="btn">And More</a>
+      </div>
+      <div class="pic">
+        <img src="image/iphone11_pro.png">
+      </div>
+    </div>
+  </header>
+
+  <!-- スクロール時ページトップに行くボタン -->
+  <p class="pagetop">
+    <a href="#container">
+      <img src="image/pagetop.png" alt="PAGE TOP" />
+    </a>
+  </p>
+  <section class="features">
+    <h1>Recenyly</h1>
+
+    <div class="container">
+      <!-- PC版レイアウト -->
+      <section>
+        <div class="pic">
+          <img src="image/mercedes.png">
+        </div>
+        <div class="info">
+          <h1 id="title1">Driving</h1> -Why I love cars?-
+          <p>A beautiful car is one of the few mechanical creations that
+            engenders a deep emotional response in people.
+            There’s something about a car that is alive.
+            It’s a completely engaging sensory experience, like no other.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="pic">
+          <img src="image/honolulu.png">
+        </div>
+        <div class="info">
+          <h1 id="title2">Travel the World</h1> -What's attractions?-
+          <p>Travelling is more than just going to different places,
+            it’s something more precious, memorable and fun.
+            It gives time to think, learn, appreciate, memorable memories and explore.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="pic">
+          <img src="image/golf.png">
+        </div>
+        <div class="info">
+          <h1>Playing Golf</h1>
+          <p>Many people enjoy golf because it is an inclusive sport.
+            Men, women, and children can all enjoy a game of golf.</p>
+        </div>
+      </section>
+
+    </div>
+  </section>
+
+  <section class="members">
+    <h1>member</h1>
+    <ul>
+      <li>
+        <!-- 画像、名前、説明 -->
+        <img src="image/member1.png">
+        <h2>Takahito Ito</h2>
+        <p>I'm fine</p>
+      </li>
+      <li>
+        <!-- 画像、名前、説明 -->
+        <img src="image/member2.png">
+        <h2>Toshitake Ito</h2>
+        <p>I'm fine</p>
+      </li>
+      <li>
+        <!-- 画像、名前、説明 -->
+        <img src="image/member3.png">
+        <h2>Midori Ito</h2>
+        <p>I'm fine</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="call-to-action">
+    <h1>Let's Join us</h1>
+    <a href="ContactPage.html" class="btn">Contact</a>
+  </section>
+  <footer>
+    (C) Ito.corporation.com
+  </footer>
+</body>
+
+</html>
