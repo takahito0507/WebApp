@@ -1,0 +1,28 @@
+{
+  "name": "WebApp",
+  "version": "1.0.0",
+  "description": "create web app and practice",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": ".\\node_modules\\.bin\\babel app/script --out-dir app/doc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takahito0507/WebApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/takahito0507/WebApp/issues"
+  },
+  "homepage": "https://github.com/takahito0507/WebApp#readme"
+}
