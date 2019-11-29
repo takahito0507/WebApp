@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Practice</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <h1>サンプルタイトル</h1>
+    <button id="one">Toggle</button>
+    <button id="two">Toggle</button>
+
+    <script>
+        $('#one').click(function () {
+            $('h1').slideToggle('slow');
+        })
+
+        $('#two').click(function () {
+            $('h1').toggle(1000, 'linear');
+        })
+    </script>
+</body>
+
+</html>
