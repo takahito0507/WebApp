@@ -1,5 +1,5 @@
 {
-  "name": "WebApp",
+  "name": "webapp",
   "version": "1.0.0",
   "description": "create web app and practice",
   "main": "index.js",
@@ -8,11 +8,18 @@
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
     "express": "^4.17.1",
+    "karma-cli": "^2.0.0",
     "socket.io": "^2.3.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "karma": "^4.4.1",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-coverage": "^2.0.1",
+    "karma-jasmine": "^2.0.1",
+    "karma-mocha-reporter": "^2.2.5"
+  },
   "scripts": {
-    "build": ".\\node_modules\\.bin\\babel app/script --out-dir app/doc"
+    "build": "babel app/script --out-dir app/doc"
   },
   "repository": {
     "type": "git",
